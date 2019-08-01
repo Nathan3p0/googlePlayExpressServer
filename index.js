@@ -38,6 +38,10 @@ app.get('/apps', (req, res) => {
     res.json(results);
 });
 
-app.listen(port, () => {
-    console.log(`Server is listening on Port ${port}`);
-})
+module.exports = {
+    app: app,
+    port: port
+}
+// app.listen(port, () => {
+//     console.log(`Server is listening on Port ${port}`);
+// })

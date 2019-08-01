@@ -1,5 +1,5 @@
-const app = require('./index.js')
+const { app, port } = require('./index.js');
 
-app.listen(port, () => {
+app.listen(8000, () => {
     console.log(`Server is listening on Port ${port}`);
 })
